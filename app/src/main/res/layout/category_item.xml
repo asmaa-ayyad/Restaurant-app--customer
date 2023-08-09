@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="210dp"
+    android:layout_height="250dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/salecard"
+        android:layout_width="180dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:outlineSpotShadowColor="@android:color/holo_purple"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="185dp"
+                android:layout_height="229dp"
+                android:layout_marginTop="-8dp"
+                android:src="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/categoryName"
+                android:layout_width="151dp"
+                android:layout_height="143dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="12dp"
+                android:text="categort &amp;\nName"
+                android:textColor="#33000000"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="397dp"
+            android:layout_height="175dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="25dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="meal Name"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="125dp" />
+
+                <TextView
+                    android:id="@+id/rateTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    tools:layout_editor_absoluteX="337dp"
+                    tools:layout_editor_absoluteY="44dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="241dp"
+                    android:layout_height="54dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="@android:color/darker_gray"
+                    android:progressTint="@android:color/holo_orange_dark"
+                    android:rating="4"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:stepSize="1"
+                    tools:layout_editor_absoluteX="131dp"
+                    tools:layout_editor_absoluteY="32dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    -->

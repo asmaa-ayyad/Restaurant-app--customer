@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.andro2groupprojecttest.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_resturantFragment"
+            app:destination="@id/resturantFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.andro2groupprojecttest.ui.dashboard.DashboardFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_navigation_dashboard_to_resturantFragment"
+            app:destination="@id/resturantFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_meal_details"
+            app:destination="@id/meal_details" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_orders2"
+            app:destination="@id/orders" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.andro2groupprojecttest.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.andro2groupprojecttest.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_userLocation"
+            app:destination="@id/userLocation" />
+    </fragment>
+    <fragment
+        android:id="@+id/resturantFragment"
+        android:name="com.example.andro2groupprojecttest.ResturantAct"
+        android:label="fragment_resturant"
+        tools:layout="@layout/fragment_resturant" >
+        <action
+            android:id="@+id/action_resturantFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <action
+            android:id="@+id/action_resturantFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/meal_details"
+        android:name="com.example.andro2groupprojecttest.meal_details"
+        android:label="fragment_meal_details"
+        tools:layout="@layout/fragment_meal_details" >
+        <action
+            android:id="@+id/action_meal_details_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/orders"
+        android:name="com.example.andro2groupprojecttest.Orders"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_orders_to_navigation_dashboard2"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLocation"
+        android:name="com.example.andro2groupprojecttest.userLocation"
+        android:label="activity_user_location"
+        tools:layout="@layout/activity_user_location" >
+        <action
+            android:id="@+id/action_userLocation_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+</navigation>
